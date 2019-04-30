@@ -1,0 +1,14 @@
+{
+  "name": "sasswithnodejs",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio website with Node JS and Sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/main.scss dist/css/style.css -w"
+  },
+  "author": "Manjit Rabha",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

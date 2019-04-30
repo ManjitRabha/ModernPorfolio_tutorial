@@ -1,0 +1,45 @@
+$colors: (
+    primary: #4C4B4B,
+    accent: rgb(93, 113, 139),
+    font: #fff,
+);
+@function color($colorName) {
+    @return map-get($map: $colors, $key: $colorName)
+}
+html {
+    height: 100vh;
+    background-color: #4C4B4B;
+}
+body {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+header {
+    height: 64px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        a {
+            text-decoration: none;
+            color: color(font); text-transform: uppercase; font-family: cursive;
+        }
+    }
+    .menubar {
+        
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            li {
+                padding: 5px 10px;
+                a {
+                    text-decoration: none;
+                    color: color(font);
+                }
+            }
+        }
+    }
+}
