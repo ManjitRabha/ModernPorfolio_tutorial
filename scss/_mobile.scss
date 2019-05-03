@@ -1,0 +1,20 @@
+// Widescree
+@include mediaXL {
+
+}
+
+// Desktop & Laptop
+@include mediaLg {
+    
+}
+
+// Tablet & small Laptop
+@include mediaMd {
+    align-items: center;
+    text-align: center;
+}
+
+// Mobile or Smartphone
+@include mediaSm {
+    
+}
