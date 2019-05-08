@@ -1,11 +1,15 @@
 // Widescree
 @include mediaXl {
-
+.projects {
+  grid-template-columns: repeat(4, 1fr);
+}
 }
 
 // Desktop & Laptop
 @include mediaLg {
-    
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Tablet & small Laptop
@@ -53,6 +57,9 @@
      'job3';
      grid-template-columns: 1fr;
    }
+   .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 // Mobile or Smartphone
 @include mediaSm {
@@ -62,5 +69,8 @@
        
         margin-top: 10vh;
       
+    }
+    .projects {
+      grid-template-columns: 1fr;
     }
   }
